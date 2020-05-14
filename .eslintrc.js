@@ -12,7 +12,7 @@ module.exports = {
     'plugin:vue/recommended',
     'plugin:prettier/recommended'
   ],
-  plugins: ['vue'],
+  plugins: ['import', 'vue'],
   rules: {
     'no-console': 'off',
     'vue/max-attributes-per-line': 'off',
@@ -21,6 +21,8 @@ module.exports = {
     'no-unused-vars': 'warn',
     semi: ['error', 'never'],
     'vue/html-indent': ['error', 2],
+    'vue/padding-line-between-blocks': 'error',
+    'import/newline-after-import': ['error'],
     'prettier/prettier': [
       'error',
       {},
